@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Test Page - Designed by Wylth Infra Team</h1>
+        <p>This is a simple HTML page designed for testing purposes.</p>
+        <p>You can use this page to test browser rendering, CSS styles, and basic JavaScript functionality.</p>
+
+        <h2>Interactive Elements</h2>
+        <button onclick="showAlert()">Click Me!</button>
+        <p id="message"></p>
+
+        <h2>List Example</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <h2>Table Example</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data A1</td>
+                    <td>Data A2</td>
+                </tr>
+                <tr>
+                    <td>Data B1</td>
+                    <td>Data B2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function showAlert() {
+            document.getElementById('message').innerText = 'Button clicked successfully!';
+            alert('Hello from JavaScript!');
+        }
+    </script>
+</body>
+</html>
